@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Design lite</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.brown-teal.min.css" />
+
+</head>
+<style>
+    .mdl-layout__content {
+        min-height: 300px;
+    }
+
+    .main {
+        min-height: 200px;
+    }
+
+    .mdl-grid {
+        min-height: 320px;
+        color: #757575 !important;
+    }
+
+    .body {
+        background: #FAFAFA;
+        min-height: 150px;
+    }
+
+    .background-cinza {
+        background-color: #eee;
+        min-height: 50px;
+    }
+
+    nav.mdl-naigation .mdl-badge[data-badge]:after {
+        top: 5px;
+        right: -8px;
+    }
+
+    @media screen and (max-width: 400px) {
+        .esconde-celular {
+            display: none;
+        }
+    }
+
+    .md-18 {
+        font-size: 18px;
+    }
+
+    .md-40 {
+        font-size: 40px;
+    }
+
+    .laranja {
+        color: orangered;
+    }
+
+    .demonstracao-card {
+        width: 512px;
+
+    }
+
+    .demonstracao-card>.mdl-card__title {
+        color: #FFFF;
+        height: 176px;
+        background: url('imagem.jpeg') center / cover;
+    }
+
+    .demonstracao-card>.mdl-card__menu {
+        color: #FFFF;
+    }
+    .mdl-layout__drawer >.mdl-layout__header-row {
+        background-color: aqua;
+    }
+</style>
+
+<body>
+
+    <!--site para baixar os icones   www.google.com.br/design/icons-->
+
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header ">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">Escola</span>
+                <div class="mdl-layout-spacer"></div>
+
+                <nav class="mdl-navigation">
+
+                    <a hef="#" class="mdl-navigation__link">link1</a>
+                    <a hef="#" class="mdl-navigation__link">link2</a>
+                    <a hef="#" class="mdl-navigation__link">link3</a>
+
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                        <label class="mdl-button mdl-js-button mdl-button--icon" for="pesquisa">
+                            <i class="material-icons">search</i>
+                        </label>
+                        <div class="mdl-textfield__expandable-holder">
+                            <input class="mdl-textfield__input" type="text" id="pesquisa">
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">Escola</span>
+            </div>
+            <nav class="mdl-navigation">
+
+                <a hef="#" class="mdl-navigation__link">link1</a>
+                <a hef="#" class="mdl-navigation__link">link2</a>
+                <a hef="#" class="mdl-navigation__link">link3</a>
+                <a hef="#" class="mdl-navigation__link">link4</a>
+            </nav>
+
+        </div>
+        <div class="mdl-layout__content">
+            <main>
+
+                <div class="mdl-cell mdl-cell--4-col">
+                    <h3>TextFields</h3>
+                    <div class="background-cinza">
+
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <input class="mdl-textfield__input" type="text" id="user" pattern="[A-Z,a-z ]*">
+                            <label class="mdl-textfield__label" for="user">usuário</label>
+                            <span class="mdl-textfield__error">Apenas numeros</span>
+                            <!--Classe que limite o tipo de caracter-->
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" id="user" pattern="[0-9, ]*">
+                            <!--tb pode usar textarea-->
+                            <label class="mdl-textfield__label" for="end">senha</label>
+                            <span class="mdl-textfield__error">Apenas numeros</span>
+                            <!--Classe que limite o tipo de caracter-->
+                        </div>
+                    </div>
+                </div>
+                <div class= "mdl-cell mdl-cell--6-col">
+                    <h3>Tabelas</h3>
+                    <div class="background-cinza">
+                        <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp mdl-data-table--selectable">
+                            <thead>
+                                <tr>
+                                    <th class="mdl-data-table__cell--non-numeric">Nome</th>
+                                    <th>Idade</th>
+                                    <th>ID</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">João</td>
+                                    <td>22</td>
+                                    <td>8457</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">João</td>
+                                    <td>22</td>
+                                    <td>8457</td>
+                                </tr>
+                                 <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">João</td>
+                                    <td>22</td>
+                                    <td>8457</td>
+                                </tr>
+                                <tr>
+                                    <td>João</td>
+                                    <td>22</td>
+                                    <td>8457</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cel--6-col">
+                    <h3>Tooltips</h3>
+                    <div class="background-cinza">
+                        <span id="tool1">Raoni</span>
+                        <span for="tool1" class="mdl-tooltip">raonileandro@gmail.com</span>
+                        <p span id="tool2">vc conhece o Raoni</p></span>
+                        <span for="tool2" class="mdl-tooltip">raonileandro@gmail.com</span>
+                    </div>
+                </div>
+            </main>
+         </div>
+    </div>
+
+
+</body>
+
+</html>
